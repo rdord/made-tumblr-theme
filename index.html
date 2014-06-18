@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>roland made</title>
+        <meta name="author" content="Roland Đorđević">
+        <meta name="description" content="Work in progress.">
+        <link rel="shortcut icon" href="http://static.tumblr.com/vmnk383/OIBn7dau4/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://static.tumblr.com/vmnk383/CB9n5dcc3/bootstrap.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:700' rel='stylesheet' type='text/css'>
+        
+        <style>
+            /* defaults */
+            html,button,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}audio,canvas,img,video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}
+
+            body {
+                font: 15px/1.8 "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+            /* helpers */
+            .browsehappy {
+                margin: 0.2em 0;
+                background: #ccc;
+                color: #000;
+                padding: 0.2em 0;
+            }
+
+            .wf-loading .head__heading {
+                visibility: hidden;
+            }
+
+            .wf-active .head__heading, .wf-inactive .head__heading {
+                visibility: visible;
+            }
+
+            /* header */
+            .head {
+                background-color: rgba(0, 0, 0, 0); 
+                -webkit-transition: background-color 1.6s ease;
+                transition: background-color 1.6s ease; 
+            }
+
+            .head:hover {
+                background-color: rgba(0, 0, 0, 0.01);
+             }
+
+            .head__heading {
+                display: block;
+                position: relative;
+                width: 7.8em;
+                margin: 3em auto;
+                text-align: right;
+                text-transform: uppercase;
+                font-size: 2.5em;
+                font-weight: bold;    
+                font-family: 'Libre Baskerville', serif;
+                color: #94A89D;
+                -webkit-animation: changecolor 2s infinite;
+                animation: changecolor 2s infinite;
+                cursor: default;
+            }
+
+            @-webkit-keyframes changecolor {
+                0%   {color: hsl(147, 12%, 66%);}
+                60%  {color: hsl(147, 12%, 62%);}
+                100% {color: hsl(147, 12%, 66%);}                
+            }
+
+            @keyframes changecolor {
+                0%   {color: hsl(147, 12%, 66%);}
+                60%  {color: hsl(147, 12%, 62%);}
+                100% {color: hsl(147, 12%, 66%);}                
+            }
+
+            /* posts */
+            .post_type_image {
+                text-align: center;
+            }
+
+            .post_type_image a {
+                text-decoration: none;
+                color: #222;
+            }
+
+            .post_type_image a:hover {
+                color: rgba(0, 0, 0, 0.73);
+            }
+
+            .post_type_image .post__text {
+                text-align: left;
+                -webkit-column-width: 10em;   
+                -moz-column-width: 10em;     
+                column-width: 10em;           
+                -webkit-column-gap: 2em; 
+                -moz-column-gap: 2em;
+                column-gap: 2em;
+                border:1px solid rgba(0, 0, 0, 0);
+            }
+
+            .post__image {
+                margin: 6em 0;
+            }
+
+            .post__image:hover {
+                opacity: 0.96;
+            }
+
+            .post__text_container {   
+                width: 100%;
+                display: block;
+                background-color: rgb(252, 220, 169);
+            }
+
+            .post__text_container:hover{
+                box-shadow: inset 0 -2px 40px rgba(0, 0, 0, 0.03);
+            }
+
+            .post__text {
+                margin-top: 2.4em;
+                margin-bottom: 2.4em;
+            }
+
+            .post__text p {
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+            }
+               
+            /* responsive (Tumblr will override this with custom layout on mobile devices) */
+            @media (max-width: 480px) {
+                .head { 
+                    display: none; 
+                }
+            }
+            
+        </style>
+
+        <!--[if lt IE 9]>
+            <script src="http://static.tumblr.com/vmnk383/jkJn5dcau/html5shiv.min.js"></script>
+        <![endif]-->
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="row head">
+            <h1 class="head__heading">MADE</h1> 
+        </header>
+
+        <div class="post post_type_image">
+            <a href="#jjjj">
+                <img src="http://placekitten.com/g/540/300" alt="Kitten" class="post__image">
+            </a>
+
+            <a href="#permalink" class="text-center">
+                <div class="post__text_container">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 post__text">
+                        <p>Content soonsoon dolor sit amet, consectetur adipisicing elit. Est odio odit, atque fuga delectus possimus quasi facere sit iusto sequi non, eaque optio omnis quia, fugiat quam eos, pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nihil iusto consequuntur!</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+            <!-- http://html5doctor.com/block-level-links-in-html-5/ -->
+        </div>
+
+        <div class="post post_type_image">
+            <a href="#jjjj">
+                <img src="http://placekitten.com/g/800/400" alt="Kitten" class="post__image">
+            </a>
+
+            <a href="#permalink" class="text-center">
+                <div class="post__text_container">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 post__text">
+                        <p>Work in progressum dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis, dolorem, cum impedit accusamus officiis nihil recusandae earum quisquam pariatur.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="post post_type_image">
+            <a href="#jjjj">
+                <img src="http://placekitten.com/g/300/300" alt="Kitten" class="post__image">
+            </a>
+
+            <a href="#permalink" class="text-center">
+                <div class="post__text_container">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 post__text">
+                        <p>Lorem for visit dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis, dolorem, cum impedit accusamus officiis nihil recusandae earum quisquam pariatur delectus neque corporis modi incidunt aliquam laboriosam nulla animi saepe.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="post post_type_image">
+            <a href="#jjjj">
+                <img src="http://placekitten.com/g/700/300" alt="Kitten" class="post__image">
+            </a>
+
+            <a href="#permalink" class="text-center">
+                <div class="post__text_container">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 post__text">
+                        <p>Check ipsum back dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+
+    </body>
+</html>
