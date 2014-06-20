@@ -38,12 +38,13 @@
             /* header */
             .head {
                 background-color: rgba(0, 0, 0, 0); 
+                box-shadow: 0 4px 1px rgba(0, 0, 0, 0.25);   
                 -webkit-transition: background-color 1.6s ease;
                 transition: background-color 1.6s ease; 
             }
 
             .head:hover {
-                background-color: rgba(0, 0, 0, 0.02);
+                background-color: rgba(0, 0, 0, 0.02);   
              }
 
             .head__heading {
@@ -91,7 +92,6 @@
 
             .post_type_image .post__text {
                 text-align: justify;
-             
                 border:1px solid rgba(0, 0, 0, 0);
             }
 
@@ -131,14 +131,17 @@
                     display: none; 
                 }
 
+                .post_type_image .post__text {
+                    text-align: left;
+                 }
+
                 .post__image { 
                       display: block;
                       width: 100%;
                       max-width: 100%;
                       height: auto; 
                 }
-            }
-            
+            }            
         </style>
 
         <!--[if lt IE 9]
