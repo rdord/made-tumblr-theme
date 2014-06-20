@@ -16,7 +16,7 @@
             html,button,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}audio,canvas,img,video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}
 
             body {
-                font: 15px/1.8 "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font: 15px/2.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
 
             /* helpers */
@@ -90,7 +90,7 @@
             }
 
             .post_type_image .post__text {
-                text-align: left;
+                text-align: justify;
              
                 border:1px solid rgba(0, 0, 0, 0);
             }
@@ -114,8 +114,8 @@
             }
 
             .post__text {
-                margin-top: 2.4em;
-                margin-bottom: 2.4em;
+                margin-top: 2.2em;
+                margin-bottom: 1.8em;
             }
 
             .post__text p {
@@ -126,16 +126,23 @@
             }
                
             /* responsive (Tumblr will override this with custom layout on mobile devices) */
-            @media (max-width: 480px) {
-                .head, .post__image { 
+            @media (max-width: 768px) {
+                .head { 
                     display: none; 
+                }
+
+                .post__image { 
+                      display: block;
+                      width: 100%;
+                      max-width: 100%;
+                      height: auto; 
                 }
             }
             
         </style>
 
-        <!--[if lt IE 9]>
-            <script src="http://static.tumblr.com/vmnk383/jkJn5dcau/html5shiv.min.js"></script>
+        <!--[if lt IE 9]
+>            <script src="http://static.tumblr.com/vmnk383/jkJn5dcau/html5shiv.min.js"></script>
         <![endif]-->
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
     </head>
