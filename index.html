@@ -12,14 +12,14 @@
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:700' rel='stylesheet' type='text/css'>
         
         <style>
-            /* defaults */
+            /* Defaults */
             html,button,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}audio,canvas,img,video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}
 
             body {
                 font: 15px/2.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
 
-            /* helpers */
+            /* Helpers */
             .browsehappy {
                 margin: 0.2em 0;
                 background: #ccc;
@@ -35,7 +35,7 @@
                 visibility: visible;
             }
 
-            /* header */
+            /* Header */
             .head {
                 background-color: rgba(0, 0, 0, 0); 
                 box-shadow: 0 4px 1px rgba(0, 0, 0, 0.25);   
@@ -75,7 +75,7 @@
                 100% {color: hsl(150, 26%, 61%);}                   
             }
 
-            /* posts */
+            /* Posts */
 
             .post_type_image {
                 text-align: center;
@@ -125,15 +125,23 @@
                 hyphens: auto;
             }
                
-            /* responsive (Tumblr will override this with custom layout on mobile devices) */
+            /* Responsive */
             @media (max-width: 768px) {
                 .head { 
                     display: none; 
+                    box-shadow: none;  
+                    -webkit-transition: none;
+                    transition: none;
                 }
 
                 .post_type_image .post__text {
                     text-align: left;
+                    text-decoration: underline;
                  }
+
+                .post__text_container:hover{
+                    box-shadow: none;
+                }
 
                 .post__image { 
                       display: block;
