@@ -1,3 +1,3 @@
 #About
 
-Tumblr blog theme.
+Tumblr blog theme. **Work in progress.**
